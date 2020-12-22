@@ -1,0 +1,64 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+
+.main {
+	background-color: #000;
+}
+
+.header {
+	padding-top: 41px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 185px;
+	height: 51px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.phone {
+	font-weight: 800;
+	font-size: 15px;
+	line-height: 20px;
+	text-align: right;
+}
+
+.offer {
+	padding-top: 180px;
+	padding-bottom: 302px;
+}
+
+.offer span {
+	color: #2697ff;
+}
+
+.offer__descr {
+	margin-top: 14px;
+}
+
