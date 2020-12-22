@@ -25,7 +25,7 @@ h1 {
 }
 
 .container {
-	max-width: 1200px;
+	width: 1200px;
 	margin: 0 auto;
 }
 
@@ -50,7 +50,6 @@ h1 {
 }
 
 .offer {
-	max-width: 500px;
 	padding-top: 180px;
 	padding-bottom: 302px;
 }
@@ -60,7 +59,6 @@ h1 {
 }
 
 .offer__descr {
-	max-width: 500px;
 	margin-top: 14px;
 }
 
