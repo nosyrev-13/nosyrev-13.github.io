@@ -358,16 +358,12 @@ ul, li {
 	margin-bottom: 15px;
 }
 
-.form input:last-child {
+.form input:last-of-type {
 	margin-bottom: 20px;
 }
 
 .form input:focus {
 	border-color: #ff7d34;
-}
-
-.form {
-	margin-bottom: 0;
 }
 
 .form__btn {
