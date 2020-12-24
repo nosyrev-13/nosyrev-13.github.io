@@ -83,7 +83,7 @@ ul, li {
 	background: url("../img/bg-main.jpg") no-repeat center center/cover;
 	color: #fff;
 	padding-top: 43px;
-	padding-bottom: 274px;
+	padding-bottom: 76px;
     position: relative;
 }
 
@@ -201,37 +201,26 @@ ul, li {
 }
 
 .offer__arrow {
+	background: url("../img/arrow.svg");
 	position: relative;
-	text-align: center;
-	transform: translateX(-10px);
-}
-
-.left::before {
-	content: "";
 	display: block;
-	position: absolute;
-	width: 15px;
-	height: 1px;
-	top: 184px;
-	left: 50%;
-	background-color: #fff;
-
-	transform: rotate(45deg);
+	width: 30px;
+	height: 16px;
+	margin: 0 auto;
+	margin-top: 184px;
 }
 
-.right::before {
-	content: "";
+.offer__arrow:hover {
+	background: url("../img/arrow_on.svg");
+	position: relative;
 	display: block;
-	position: absolute;
-	width: 15px;
-	height: 1px;
-	top: 184px;
-	left: 50%;
-	background-color: #fff;
-
-	transform: rotate(-45deg);
-	margin-left: 10px;
+	width: 30px;
+	height: 16px;
+	margin: 0 auto;
+	margin-top: 184px;
 }
+
+
 
 /*================ Vector =============*/
 .vector__cards {
