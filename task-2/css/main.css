@@ -64,7 +64,7 @@ ul, li {
 	display: block;
 	background: #ff7d34;
 	border-radius: 69px;
-	padding: 15px 41px;
+	padding: 15px 0;
 	margin: 0 auto;
 	width: 210px;
 	text-align: center;
@@ -76,7 +76,7 @@ ul, li {
 }
 
 .btn:hover {
-	background: #d25e1d;
+	background: #FF5400;
 }
 
 /*=============== Header ===================*/
@@ -97,7 +97,7 @@ ul, li {
     height: 100%;
     top: 0;
     background: linear-gradient(90deg, rgb(36, 79, 210), rgb(55, 201, 216));
-    opacity: .7;  
+    opacity: .7;
 }
 
 .header .container {
@@ -117,8 +117,8 @@ ul, li {
 	letter-spacing: 0.1em;
 
 	display: block;
-	background: url("../img/logo.svg") no-repeat left center;
-	padding-left: 35px;
+	background: url("../img/logo.svg") no-repeat left center/contain;
+	padding-left: 30px;
 	margin-right: 111px;
 }
 
@@ -136,10 +136,11 @@ ul, li {
 
 .nav a {
 	padding-bottom: 10px;
+	border-bottom: 1px solid transparent;
 }
 
 .nav a:hover {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+	border-bottom: 1px solid #ffffff;
 }
 
 
@@ -202,24 +203,20 @@ ul, li {
 }
 
 .offer__arrow {
-	background: url("../img/arrow.svg");
-	position: relative;
 	display: block;
-	width: 30px;
-	height: 16px;
-	margin: 0 auto;
-	margin-top: 184px;
+	height: 15px;
+	width: 15px;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	transform: rotate(45deg);
+	margin: 180px auto 0;
 }
 
 .offer__arrow:hover {
-	background: url("../img/arrow_on.svg");
-	position: relative;
-	display: block;
-	width: 30px;
-	height: 16px;
-	margin: 0 auto;
-	margin-top: 184px;
+	border-color: #ff7d34;
 }
+
+
 
 
 
@@ -255,12 +252,15 @@ ul, li {
 }
 
 .vector__item img {
-	margin-right: 30px;
 	border-radius: 15px 0px 0px 15px;
 }
 
 .vector__item:hover {
 	box-shadow: 0px 7px 20px rgba(32, 40, 69, 0.25);
+}
+
+.vector__content {
+	padding: 35px 30px 41px 28px;
 }
 
 .vector__content span {
@@ -286,8 +286,9 @@ ul, li {
 
 .vector__descr {
 	margin-top: 12px;
-	max-width: 234px;
 }
+
+
 
 .more__btn {
 	display: block;
@@ -332,7 +333,6 @@ ul, li {
 /*================ Contacts =============*/
 
 .form {
-	margin-top: 57px;
 	width: 601px;
 	padding: 58px 64px 97px;
 	box-shadow: 0px 17px 50px rgba(32, 40, 69, 0.14);
@@ -366,26 +366,31 @@ ul, li {
 	border-color: #ff7d34;
 }
 
+
+
 .form__btn {
 	width: 296px;
 	font-size: 17px;
-	margin-top: 0;
+	text-align: center;
+	margin: 0;
 	color: #fff;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 17px;
-	padding: 22px 84px;
+	padding: 22px 0;
 	cursor: pointer;
 }
 
 .contacts__wrapper {
 	display: flex;
+	justify-content: space-between;
+	width: 994px;
 	align-items: center;
+	margin-top: 57px;
 }
 
 .contacts__phone {
 	display: flex;
 	flex-direction: column;
-	margin-left: 219px;
 }
 
 .contacts__phone a {
@@ -401,7 +406,7 @@ ul, li {
 
 .footer {
 	font-size: 14px;
-	margin: 116px 0 119px;
+	padding: 116px 0 119px;
 	text-align: center;
 	color: rgba(114, 52, 26, 0.6);
 }
