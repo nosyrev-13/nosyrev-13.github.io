@@ -549,6 +549,9 @@ ul, li {
 	.vector__details {
 		width: 100%;
 	}
+	.more__btn {
+		width: 100%;
+	}
 	.form {
 		padding: 38px 26px 55px;
 	}
