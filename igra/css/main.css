@@ -297,7 +297,7 @@ ul, li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 30px;
+	font-size: 20px;
 	text-decoration: none;
 	width: 70px;
 	height: 70px;
@@ -308,8 +308,8 @@ ul, li {
 .social:before {
 	position: absolute;
 	content: '';
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	border: 3px solid #18DF96;
 	border-radius: 50%;
 
@@ -332,7 +332,7 @@ ul, li {
 
 .social:hover {
 	color: #51A3FA;
-	
+
 }
 
 .social:hover:before {
