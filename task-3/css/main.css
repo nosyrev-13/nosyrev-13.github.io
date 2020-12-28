@@ -543,6 +543,10 @@ ul, li {
 	.offer__desc {
 		width: 100%;
 	}
+	.vector__content {
+		 padding: 35px 12px 41px 12px;
+		 width: 100%;
+	}
 	.offer__arrow {
 		margin: 80px auto 0;
 	}
