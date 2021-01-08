@@ -1,13 +1,20 @@
+div#container
+{
+   width: 960px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
 body
 {
    background-color: #DCDCDC;
    color: #000000;
-   font-family: Arial;
+   font-family: Ubuntu;
    font-weight: normal;
    font-size: 13px;
    line-height: 1.1875;
    margin: 0;
-   padding: 0;
+   text-align: center;
 }
 a
 {
@@ -31,12 +38,17 @@ input:focus, textarea:focus, select:focus
 {
    outline: none;
 }
+.visibility-hidden
+{
+   visibility: hidden;
+}
 #Layer1
 {
    background-color: transparent;
    background-image: url('../images/1113.jpg');
    background-repeat: no-repeat;
    background-position: center center;
+   background-attachment: scroll;
    background-size: cover;
    box-sizing: border-box;
    margin: 0;
@@ -64,6 +76,13 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: center;
 }
+#wb_Text1
+{
+   color: #FFFFFF;
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 13px;
+}
 #wb_Text1 div
 {
    text-align: center;
@@ -76,6 +95,13 @@ input:focus, textarea:focus, select:focus
    padding: 0;
    margin: 0;
    text-align: left;
+}
+#wb_Text2
+{
+   color: #FFFFFF;
+   font-family: "Ubuntu";
+   font-weight: 700;
+   font-size: 48px;
 }
 #wb_Text2 div
 {
@@ -90,6 +116,13 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: left;
 }
+#wb_Text3
+{
+   color: #FFFFFF;
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 16px;
+}
 #wb_Text3 div
 {
    text-align: left;
@@ -103,20 +136,14 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: left;
 }
+#wb_Text4
+{
+   color: #FFFFFF;
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 16px;
+}
 #wb_Text4 div
-{
-   text-align: left;
-}
-#wb_Text5 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: left;
-}
-#wb_Text5 div
 {
    text-align: left;
 }
@@ -290,6 +317,13 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: center;
 }
+#wb_Text6
+{
+   color: #FFFFFF;
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 17px;
+}
 #wb_Text6 div
 {
    text-align: center;
@@ -302,6 +336,13 @@ input:focus, textarea:focus, select:focus
    padding: 0;
    margin: 0;
    text-align: center;
+}
+#wb_Text7
+{
+   color: #DB7093;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
 }
 #wb_Text7 div
 {
@@ -403,7 +444,7 @@ input:focus, textarea:focus, select:focus
    width: 100%;
    height: 100%;
 }
-#wb_Text8 
+#wb_tel-text 
 {
    background-color: transparent;
    background-image: none;
@@ -412,7 +453,14 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: center;
 }
-#wb_Text8 div
+#wb_tel-text
+{
+   color: #000000;
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 16px;
+}
+#wb_tel-text div
 {
    text-align: center;
 }
@@ -424,6 +472,14 @@ input:focus, textarea:focus, select:focus
    padding: 0;
    margin: 0;
    text-align: center;
+}
+#wb_Text9
+{
+   color: #DB7093;
+   font-family: "Ubuntu";
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 19px;
 }
 #wb_Text9 div
 {
@@ -460,8 +516,8 @@ input:focus, textarea:focus, select:focus
 }
 #Shape1:hover
 {
-   background-color: #90C9EC;
-   background: linear-gradient(to right, #90C9EC 0%, #0963AD 100%);
+   background-color: #DA70D6;
+   background: linear-gradient(to right, #DA70D6 0%, #4169E1 100%);
    border: 0px #0963AD solid;
 }
 #Shape1_text
@@ -471,6 +527,65 @@ input:focus, textarea:focus, select:focus
    top: 23px;
    width: 243px;
    height: 22px;
+   overflow: hidden;
+   text-align: center;
+   word-wrap: break-word;
+}
+#Shape1:hover
+{
+   background-color: #DA70D6;
+   -webkit-transition: background-color 500ms linear 0ms;
+   transition: background-color 500ms linear 0ms;
+}
+#Shape1 {
+-webkit-transition: all .5s linear;
+-o-transition: all .5s linear;
+transition: all .5s linear;
+}
+
+.gradient {
+  position: relative;
+ 
+  z-index: 1;
+}
+
+.gradient::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 80px;
+  background-image:  linear-gradient(to right, #b767b7 0%, #7da8b7 100%);
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+.gradient:hover::before {
+  opacity: 1;
+}
+#wb_Shape2
+{
+   transform: rotate(0deg);
+   transform-origin: 50% 50%;
+}
+#Shape2
+{
+   width: 130px;
+   height: 41px;
+   background-color: #90C9EC;
+   background: linear-gradient(315deg, #0963AD 0%, #90C9EC 100%);
+   border: 0px #0963AD solid;
+   border-radius: 15px;
+}
+#Shape2_text
+{
+   position: absolute;
+   left: 8px;
+   top: 12px;
+   width: 113px;
+   height: 20px;
    overflow: hidden;
    text-align: center;
    word-wrap: break-word;
@@ -509,8 +624,2050 @@ input:focus, textarea:focus, select:focus
 {
    color: #FFFFFF;
 }
-#Shape1 {
--webkit-transition: all .5s linear;
--o-transition: all .5s linear;
-transition: all .5s linear;
+#wb_Text8 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text8
+{
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#wb_Text8 div
+{
+   text-align: center;
+}
+#wb_Text5 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text5
+{
+   color: #FFFFFF;
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 16px;
+}
+#wb_Text5 div
+{
+   text-align: left;
+}
+#wb_Text10 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text10
+{
+   color: #FFFFFF;
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 9.3px;
+}
+#wb_Text10 div
+{
+   text-align: center;
+}
+#wb_Text11 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text11
+{
+   color: #FFFFFF;
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 16px;
+}
+#wb_Text11 div
+{
+   text-align: left;
+}
+#wb_uid24
+{
+   color: #FFFFFF;
+}
+#wb_Shape1
+{
+   position: absolute;
+   left: 99px;
+   top: 509px;
+   width: 285px;
+   height: 66px;
+   z-index: 18;
+}
+#wb_uid12
+{
+   color: #FFFFFF;
+}
+#wb_uid5
+{
+   color: #FFFFFF;
+}
+#wb_uid23
+{
+   color: #FFFFFF;
+}
+#wb_Shape2
+{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 130px;
+   height: 41px;
+   visibility: hidden;
+   z-index: 11;
+}
+#wb_uid13
+{
+   color: #FFFFFF;
+}
+#wb_uid4
+{
+   color: #FFFFFF;
+}
+#wb_uid34
+{
+   color: #FFFFFF;
+}
+#wb_uid22
+{
+   color: #FFFFFF;
+}
+#wb_uid10
+{
+   color: #FFFFFF;
+}
+#wb_uid3
+{
+   color: #FFFFFF;
+}
+#wb_Image1
+{
+   position: absolute;
+   left: 10px;
+   top: 10px;
+   width: 90px;
+   height: 105px;
+   z-index: 5;
+}
+#wb_uid35
+{
+   color: #FFFFFF;
+}
+#wb_uid21
+{
+   color: #DB7093;
+}
+#wb_Image2
+{
+   position: absolute;
+   left: 15px;
+   top: 493px;
+   width: 64px;
+   height: 64px;
+   z-index: 17;
+}
+#wb_Text4
+{
+   position: absolute;
+   left: 80px;
+   top: 428px;
+   width: 411px;
+   height: 20px;
+   z-index: 16;
+}
+#wb_uid11
+{
+   color: #FFFFFF;
+}
+#wb_uid2
+{
+   color: #FFFFFF;
+}
+#wb_uid36
+{
+   color: #FFFFFF;
+}
+#wb_Text5
+{
+   position: absolute;
+   left: 80px;
+   top: 457px;
+   width: 276px;
+   height: 20px;
+   z-index: 25;
+}
+#wb_Image3
+{
+   position: absolute;
+   left: 316px;
+   top: 594px;
+   width: 200px;
+   height: 92px;
+   z-index: 21;
+}
+#wb_uid20
+{
+   color: #FFFFFF;
+}
+#wb_uid16
+{
+   color: #FFFFFF;
+   font-family: "Ubuntu";
+   font-size: 13px;
+}
+#wb_uid1
+{
+   color: #FFFFFF;
+}
+#wb_uid37
+{
+   color: #FFFFFF;
+}
+#wb_Text6
+{
+   position: absolute;
+   left: 99px;
+   top: 593px;
+   width: 285px;
+   height: 19px;
+   text-align: center;
+   z-index: 19;
+}
+#wb_uid17
+{
+   color: #FFFFFF;
+}
+#wb_Image4
+{
+   position: absolute;
+   left: 2px;
+   top: 0px;
+   width: 367px;
+   height: 645px;
+   z-index: 0;
+}
+#wb_uid0
+{
+   color: #FFFFFF;
+}
+#wb_uid30
+{
+   color: #FFFFFF;
+}
+#wb_Text7
+{
+   position: absolute;
+   left: 99px;
+   top: 622px;
+   width: 285px;
+   height: 36px;
+   text-align: center;
+   z-index: 20;
+   cursor: pointer;
+}
+#wb_Image5
+{
+   position: absolute;
+   left: 3px;
+   top: 3px;
+   width: 372px;
+   height: 642px;
+   z-index: 1;
+}
+#Carousel1
+{
+   position: absolute;
+}
+#wb_uid14
+{
+   color: #000000;
+}
+#wb_uid31
+{
+   color: #FFFFFF;
+}
+#wb_Image6
+{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 367px;
+   height: 645px;
+   z-index: 2;
+}
+#wb_Carousel1
+{
+   position: absolute;
+   left: 565px;
+   top: 57px;
+   width: 395px;
+   height: 649px;
+   z-index: 12;
+   overflow: hidden;
+}
+#wb_uid15
+{
+   color: #DB7093;
+}
+#wb_tel-text
+{
+   position: absolute;
+   left: 805px;
+   top: 10px;
+   width: 128px;
+   height: 20px;
+   text-align: center;
+   z-index: 8;
+}
+#wb_uid32
+{
+   color: #FFFFFF;
+}
+#wb_Image7
+{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 367px;
+   height: 645px;
+   z-index: 3;
+}
+#wb_Text1
+{
+   position: absolute;
+   left: 116px;
+   top: 45px;
+   width: 345px;
+   height: 40px;
+   text-align: center;
+   z-index: 6;
+}
+#wb_Text11
+{
+   position: absolute;
+   left: 47px;
+   top: 447px;
+   width: 322px;
+   height: 20px;
+   visibility: hidden;
+   z-index: 27;
+}
+#wb_uid33
+{
+   color: #FFFFFF;
+}
+#wb_Text2
+{
+   position: absolute;
+   left: 10px;
+   top: 143px;
+   width: 506px;
+   height: 240px;
+   z-index: 22;
+}
+#wb_Text10
+{
+   position: absolute;
+   left: 111px;
+   top: 18px;
+   width: 522px;
+   height: 16px;
+   visibility: hidden;
+   text-align: center;
+   z-index: 26;
+}
+#wb_Image8
+{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 368px;
+   height: 646px;
+   z-index: 4;
+}
+#wb_Text3
+{
+   position: absolute;
+   left: 80px;
+   top: 398px;
+   width: 304px;
+   height: 20px;
+   z-index: 7;
+}
+#wb_uid29
+{
+   color: #FFFFFF;
+}
+#wb_IconFont4
+{
+   position: absolute;
+   left: 111px;
+   top: 527px;
+   width: 30px;
+   height: 30px;
+   text-align: center;
+   z-index: 23;
+}
+#wb_uid18
+{
+   color: #FFFFFF;
+   font-family: "Ubuntu";
+   font-size: 17px;
+}
+#wb_IconFont2
+{
+   position: absolute;
+   left: 48px;
+   top: 426px;
+   width: 24px;
+   height: 22px;
+   text-align: center;
+   z-index: 15;
+}
+#wb_IconFont1
+{
+   position: absolute;
+   left: 48px;
+   top: 396px;
+   width: 24px;
+   height: 22px;
+   text-align: center;
+   z-index: 14;
+}
+#wb_IconFont3
+{
+   position: absolute;
+   left: 48px;
+   top: 456px;
+   width: 24px;
+   height: 22px;
+   text-align: center;
+   z-index: 13;
+}
+#wb_Image9
+{
+   position: absolute;
+   left: 770px;
+   top: 8px;
+   width: 24px;
+   height: 24px;
+   z-index: 10;
+}
+#wb_uid28
+{
+   color: #FFFFFF;
+}
+#wb_uid19
+{
+   color: #FFFFFF;
+   font-family: "Cambria Math";
+   font-size: 17px;
+}
+#Layer1
+{
+   position: relative;
+   text-align: center;
+   width: 100%;
+   height: 709px;
+   float: left;
+   clear: left;
+   display: block;
+   z-index: 34;
+}
+#wb_uid9
+{
+   color: #FFFFFF;
+}
+#wb_uid38
+{
+   color: #FFFFFF;
+}
+#wb_uid27
+{
+   color: #FFFFFF;
+}
+#wb_uid8
+{
+   color: #FFFFFF;
+}
+#wb_uid26
+{
+   color: #FFFFFF;
+}
+#wb_Text8
+{
+   position: absolute;
+   left: 716px;
+   top: 34px;
+   width: 230px;
+   height: 16px;
+   visibility: hidden;
+   text-align: center;
+   z-index: 24;
+}
+#wb_uid7
+{
+   color: #FFFFFF;
+}
+#Layer1_Container
+{
+   width: 960px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+#wb_uid25
+{
+   color: #FFFFFF;
+}
+#wb_Text9
+{
+   position: absolute;
+   left: 805px;
+   top: 33px;
+   width: 128px;
+   height: 16px;
+   text-align: center;
+   z-index: 9;
+   cursor: pointer;
+}
+#wb_uid6
+{
+   color: #FFFFFF;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px)
+{
+div#container
+{
+   width: 768px;
+}
+body
+{
+   background-color: #DCDCDC;
+   background-image: none;
+}
+#Layer1
+{
+   width: 768px;
+   height: 567px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   background-color: transparent;
+   background-image: url('../images/1113.jpg');
+   background-repeat: no-repeat;
+   background-position: center center !important;
+   background-attachment: scroll;
+   background-size: cover;
+}
+#Layer1
+{
+   margin: 0;
+}
+#Layer1_Container
+{
+   width: 768px;
+}
+#Layer1
+{
+    width: 100%;
+    height: 567px;
+}
+#wb_Image1
+{
+   left: 8px;
+   top: 8px;
+   width: 72px;
+   height: 84px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text1
+{
+   left: 98px;
+   top: 33px;
+   width: 250px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 13px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text2
+{
+   left: 8px;
+   top: 118px;
+   width: 400px;
+   height: 180px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   font-family: "Ubuntu";
+   font-weight: 700;
+   font-size: 37px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text3
+{
+   left: 37px;
+   top: 309px;
+   width: 322px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text3
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text4
+{
+   left: 38px;
+   top: 335px;
+   width: 370px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text4
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 15px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_IconFont1
+{
+   left: 12px;
+   top: 310px;
+   width: 19px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#IconFont1
+{
+   width: 19px;
+   height: 17px;
+}
+#IconFont1 i
+{
+   line-height: 17px;
+   font-size: 17px;
+   width: 16px;
+}
+#wb_IconFont2
+{
+   left: 12px;
+   top: 334px;
+   width: 19px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#IconFont2
+{
+   width: 19px;
+   height: 17px;
+}
+#IconFont2 i
+{
+   line-height: 17px;
+   font-size: 17px;
+   width: 16px;
+}
+#wb_IconFont3
+{
+   left: 12px;
+   top: 358px;
+   width: 19px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#IconFont3
+{
+   width: 19px;
+   height: 17px;
+}
+#IconFont3 i
+{
+   line-height: 17px;
+   font-size: 17px;
+   width: 16px;
+}
+#wb_Image2
+{
+   left: 19px;
+   top: 387px;
+   width: 51px;
+   height: 51px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text6
+{
+   left: 79px;
+   top: 469px;
+   width: 245px;
+   height: 21px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text6
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 17px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text7
+{
+   left: 79px;
+   top: 497px;
+   width: 245px;
+   height: 36px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text7
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Image3
+{
+   left: 272px;
+   top: 497px;
+   width: 126px;
+   height: 57px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Carousel1
+{
+   left: 427px;
+   top: 45px;
+   width: 299px;
+   height: 519px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#Carousel1 .frame
+{
+   width: 299px;
+   height: 519px;
+}
+#wb_Image4
+{
+   left: 1px;
+   top: 0px;
+   width: 293px;
+   height: 516px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image5
+{
+   left: 2px;
+   top: 3px;
+   width: 297px;
+   height: 513px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image6
+{
+   left: 0px;
+   top: 0px;
+   width: 293px;
+   height: 516px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image7
+{
+   left: 0px;
+   top: 0px;
+   width: 293px;
+   height: 516px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image8
+{
+   left: 0px;
+   top: 0px;
+   width: 302px;
+   height: 513px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_tel-text
+{
+   left: 627px;
+   top: 6px;
+   width: 128px;
+   height: 21px;
+   visibility: visible;
+   display: inline;
+}
+#wb_tel-text
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text9
+{
+   left: 627px;
+   top: 27px;
+   width: 128px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text9
+{
+   font-family: "Ubuntu";
+   font-weight: 500;
+   font-size: 15px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   line-height: 19px;
+}
+#wb_Image9
+{
+   left: 599px;
+   top: 7px;
+   width: 19px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Shape1
+{
+   left: 79px;
+   top: 394px;
+   width: 245px;
+   height: 65px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#Shape1
+{
+   width: 245px;
+   height: 65px;
+}
+#Shape1_text
+{
+   left: 20px;
+   top: 21px;
+   width: 203px;
+   height: 22px;
+}
+#wb_Shape2
+{
+   left: 0px;
+   top: 83px;
+   width: 387px;
+   height: 56px;
+   visibility: hidden;
+   display: none;
+   margin: 0;
+}
+#Shape2
+{
+   width: 387px;
+   height: 56px;
+   background-color: #DA70D6;
+   background: linear-gradient(315deg, #00BFFF 0%, #DA70D6 100%);
+}
+#Shape2_text
+{
+   left: 8px;
+   top: 19px;
+   width: 370px;
+   height: 28px;
+}
+#wb_IconFont4
+{
+   left: 88px;
+   top: 414px;
+   width: 24px;
+   height: 24px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#IconFont4
+{
+   width: 24px;
+   height: 24px;
+}
+#IconFont4 i
+{
+   line-height: 24px;
+   font-size: 24px;
+   width: 19px;
+}
+#wb_Text8
+{
+   left: 572px;
+   top: 27px;
+   width: 184px;
+   height: 32px;
+   visibility: hidden;
+   display: none;
+}
+#wb_Text8
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 21px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text5
+{
+   left: 88px;
+   top: 1879px;
+   width: 662px;
+   height: 48px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text5
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 37px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text10
+{
+   left: 88px;
+   top: 14px;
+   width: 417px;
+   height: 67px;
+   visibility: hidden;
+   display: none;
+}
+#wb_Text10
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 32px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text11
+{
+   left: 38px;
+   top: 358px;
+   width: 258px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text11
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 15px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px)
+{
+div#container
+{
+   width: 480px;
+}
+body
+{
+   background-color: #DCDCDC;
+   background-image: none;
+}
+#Layer1
+{
+   width: 480px;
+   height: 1127px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   background-color: transparent;
+   background-image: url('../images/88888888889.jpg');
+   background-repeat: no-repeat;
+   background-position: center center !important;
+   background-attachment: scroll;
+   background-size: cover;
+}
+#Layer1
+{
+   margin: 0;
+}
+#Layer1_Container
+{
+   width: 480px;
+}
+#Layer1
+{
+    width: 100%;
+    height: 1127px;
+}
+#wb_Image1
+{
+   left: 5px;
+   top: 5px;
+   width: 45px;
+   height: 52px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text1
+{
+   left: 62px;
+   top: 14px;
+   width: 261px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 13px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text2
+{
+   left: 46px;
+   top: 94px;
+   width: 388px;
+   height: 108px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   font-family: "Ubuntu";
+   font-weight: 700;
+   font-size: 29px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text3
+{
+   left: 35px;
+   top: 843px;
+   width: 332px;
+   height: 21px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text3
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 17px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text4
+{
+   left: 35px;
+   top: 876px;
+   width: 397px;
+   height: 21px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text4
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 17px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_IconFont1
+{
+   left: 9px;
+   top: 843px;
+   width: 20px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#IconFont1
+{
+   width: 20px;
+   height: 20px;
+}
+#IconFont1 i
+{
+   line-height: 20px;
+   font-size: 20px;
+   width: 19px;
+}
+#wb_IconFont2
+{
+   left: 9px;
+   top: 876px;
+   width: 20px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#IconFont2
+{
+   width: 20px;
+   height: 20px;
+}
+#IconFont2 i
+{
+   line-height: 20px;
+   font-size: 20px;
+   width: 19px;
+}
+#wb_IconFont3
+{
+   left: 9px;
+   top: 909px;
+   width: 20px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#IconFont3
+{
+   width: 20px;
+   height: 20px;
+}
+#IconFont3 i
+{
+   line-height: 20px;
+   font-size: 20px;
+   width: 19px;
+}
+#wb_Image2
+{
+   left: 9px;
+   top: 942px;
+   width: 63px;
+   height: 63px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text6
+{
+   left: 85px;
+   top: 1038px;
+   width: 300px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text6
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 15px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text7
+{
+   left: 85px;
+   top: 1067px;
+   width: 300px;
+   height: 36px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text7
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Image3
+{
+   left: 326px;
+   top: 1067px;
+   width: 108px;
+   height: 50px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Carousel1
+{
+   left: 62px;
+   top: 243px;
+   width: 356px;
+   height: 573px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#Carousel1 .frame
+{
+   width: 356px;
+   height: 573px;
+}
+#wb_Image4
+{
+   left: 1px;
+   top: 0px;
+   width: 356px;
+   height: 572px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image5
+{
+   left: 2px;
+   top: 2px;
+   width: 352px;
+   height: 567px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image6
+{
+   left: 0px;
+   top: 0px;
+   width: 355px;
+   height: 571px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image7
+{
+   left: 0px;
+   top: 0px;
+   width: 354px;
+   height: 570px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image8
+{
+   left: 0px;
+   top: 0px;
+   width: 355px;
+   height: 571px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_tel-text
+{
+   left: 356px;
+   top: 17px;
+   width: 115px;
+   height: 20px;
+   visibility: hidden;
+   display: none;
+}
+#wb_tel-text
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text9
+{
+   left: 361px;
+   top: 33px;
+   width: 111px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text9
+{
+   font-family: "Ubuntu";
+   font-weight: 500;
+   font-size: 13px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   line-height: 18px;
+}
+#wb_Image9
+{
+   left: 336px;
+   top: 11px;
+   width: 20px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Shape1
+{
+   left: 90px;
+   top: 963px;
+   width: 300px;
+   height: 59px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#Shape1
+{
+   width: 300px;
+   height: 59px;
+}
+#Shape1_text
+{
+   left: 20px;
+   top: 20px;
+   width: 258px;
+   height: 17px;
+}
+#wb_Shape2
+{
+   left: 0px;
+   top: 51px;
+   width: 241px;
+   height: 35px;
+   visibility: hidden;
+   display: none;
+   margin: 0;
+}
+#Shape2
+{
+   width: 241px;
+   height: 35px;
+   background-color: #DA70D6;
+   background: linear-gradient(315deg, #00BFFF 0%, #DA70D6 100%);
+}
+#Shape2_text
+{
+   left: 8px;
+   top: 9px;
+   width: 224px;
+   height: 17px;
+}
+#wb_IconFont4
+{
+   left: 107px;
+   top: 980px;
+   width: 25px;
+   height: 25px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#IconFont4
+{
+   width: 25px;
+   height: 25px;
+}
+#IconFont4 i
+{
+   line-height: 25px;
+   font-size: 25px;
+   width: 20px;
+}
+#wb_Text8
+{
+   left: 359px;
+   top: 11px;
+   width: 115px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text8
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text5
+{
+   left: 29px;
+   top: 798px;
+   width: 413px;
+   height: 14px;
+   visibility: hidden;
+   display: none;
+}
+#wb_Text5
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 9.3px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text10
+{
+   left: 55px;
+   top: 8px;
+   width: 260px;
+   height: 28px;
+   visibility: hidden;
+   display: none;
+}
+#wb_Text10
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 8px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text11
+{
+   left: 35px;
+   top: 909px;
+   width: 390px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text11
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+}
+@media only screen and (max-width: 479px)
+{
+div#container
+{
+   width: 320px;
+}
+body
+{
+   background-color: #DCDCDC;
+   background-image: none;
+}
+#Layer1
+{
+   width: 320px;
+   height: 971px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   background-color: transparent;
+   background-image: url('../images/88888888889.jpg');
+   background-repeat: no-repeat;
+   background-position: center center !important;
+   background-attachment: scroll;
+   background-size: cover;
+}
+#Layer1
+{
+   margin: 0;
+}
+#Layer1_Container
+{
+   width: 320px;
+}
+#Layer1
+{
+    width: 100%;
+    height: 971px;
+}
+#wb_Image1
+{
+   left: 3px;
+   top: 3px;
+   width: 30px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text1
+{
+   left: 37px;
+   top: 6px;
+   width: 174px;
+   height: 70px;
+   visibility: hidden;
+   display: none;
+}
+#wb_Text1
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 9.3px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text2
+{
+   left: 5px;
+   top: 66px;
+   width: 311px;
+   height: 124px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   font-family: "Ubuntu";
+   font-weight: 700;
+   font-size: 24px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text3
+{
+   left: 33px;
+   top: 680px;
+   width: 277px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text3
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text4
+{
+   left: 33px;
+   top: 710px;
+   width: 276px;
+   height: 40px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text4
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_IconFont1
+{
+   left: 8px;
+   top: 680px;
+   width: 18px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#IconFont1
+{
+   width: 18px;
+   height: 18px;
+}
+#IconFont1 i
+{
+   line-height: 18px;
+   font-size: 18px;
+   width: 17px;
+}
+#wb_IconFont2
+{
+   left: 8px;
+   top: 710px;
+   width: 18px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#IconFont2
+{
+   width: 18px;
+   height: 18px;
+}
+#IconFont2 i
+{
+   line-height: 18px;
+   font-size: 18px;
+   width: 17px;
+}
+#wb_IconFont3
+{
+   left: 6px;
+   top: 759px;
+   width: 18px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#IconFont3
+{
+   width: 18px;
+   height: 18px;
+}
+#IconFont3 i
+{
+   line-height: 18px;
+   font-size: 18px;
+   width: 17px;
+}
+#wb_Image2
+{
+   left: 100px;
+   top: 647px;
+   width: 42px;
+   height: 42px;
+   visibility: hidden;
+   display: none;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text6
+{
+   left: 60px;
+   top: 880px;
+   width: 200px;
+   height: 21px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text6
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 17px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text7
+{
+   left: 60px;
+   top: 909px;
+   width: 200px;
+   height: 36px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text7
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Image3
+{
+   left: 236px;
+   top: 921px;
+   width: 72px;
+   height: 33px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Carousel1
+{
+   left: 30px;
+   top: 212px;
+   width: 261px;
+   height: 435px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#Carousel1 .frame
+{
+   width: 261px;
+   height: 435px;
+}
+#wb_Image4
+{
+   left: 1px;
+   top: 0px;
+   width: 256px;
+   height: 433px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image5
+{
+   left: 2px;
+   top: 1px;
+   width: 256px;
+   height: 433px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image6
+{
+   left: 0px;
+   top: 0px;
+   width: 256px;
+   height: 433px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image7
+{
+   left: 0px;
+   top: 0px;
+   width: 256px;
+   height: 433px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Image8
+{
+   left: 0px;
+   top: 0px;
+   width: 256px;
+   height: 433px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_tel-text
+{
+   left: 237px;
+   top: 11px;
+   width: 76px;
+   height: 15px;
+   visibility: hidden;
+   display: none;
+}
+#wb_tel-text
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 11px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text9
+{
+   left: 230px;
+   top: 21px;
+   width: 84px;
+   height: 14px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text9
+{
+   font-family: "Ubuntu";
+   font-weight: 500;
+   font-size: 9.3px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   line-height: 14px;
+}
+#wb_Image9
+{
+   left: 223px;
+   top: 11px;
+   width: 13px;
+   height: 13px;
+   visibility: hidden;
+   display: none;
+   margin: 0;
+   padding: 0;
+}
+#wb_Shape1
+{
+   left: 10px;
+   top: 809px;
+   width: 301px;
+   height: 60px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#Shape1
+{
+   width: 301px;
+   height: 60px;
+}
+#Shape1_text
+{
+   left: 20px;
+   top: 20px;
+   width: 259px;
+   height: 18px;
+}
+#wb_Shape2
+{
+   left: 0px;
+   top: 34px;
+   width: 160px;
+   height: 23px;
+   visibility: hidden;
+   display: none;
+   margin: 0;
+}
+#Shape2
+{
+   width: 160px;
+   height: 23px;
+   background-color: #DA70D6;
+   background: linear-gradient(315deg, #00BFFF 0%, #DA70D6 100%);
+}
+#Shape2_text
+{
+   left: 8px;
+   top: 8px;
+   width: 143px;
+   height: 6px;
+}
+#wb_IconFont4
+{
+   left: 37px;
+   top: 826px;
+   width: 27px;
+   height: 27px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#IconFont4
+{
+   width: 27px;
+   height: 27px;
+}
+#IconFont4 i
+{
+   line-height: 27px;
+   font-size: 27px;
+   width: 22px;
+}
+#wb_Text8
+{
+   left: 230px;
+   top: 6px;
+   width: 84px;
+   height: 13px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text8
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 11px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text5
+{
+   left: 31px;
+   top: 759px;
+   width: 276px;
+   height: 20px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text5
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#wb_Text10
+{
+   left: 37px;
+   top: 6px;
+   width: 174px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text10
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 9.3px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Text11
+{
+   left: 23px;
+   top: 606px;
+   width: 260px;
+   height: 15px;
+   visibility: hidden;
+   display: none;
+}
+#wb_Text11
+{
+   font-family: Ubuntu;
+   font-weight: normal;
+   font-size: 11px;
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
 }
