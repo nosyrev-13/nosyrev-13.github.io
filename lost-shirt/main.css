@@ -226,15 +226,15 @@ ul > li {
 
 .fade-slider__item--style-games .fade-slider__text {
 	position: absolute;
-	left: 116%;
+	left: 125%;
 	top: 89%;
 	transform: translate(-140%, -52%);
 }
 
 .fade-slider__item--style-presents .fade-slider__text {
 	position: absolute;
-	left: 61%;
-   top: 77%;
+	left: 67%;
+   	top: 77%;
 	transform: translate(-140%, -52%);
 }
 
