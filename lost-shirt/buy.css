@@ -1,0 +1,65 @@
+:root {
+	--yellow: #ffc92f;
+	--red: #d82727;
+	--black: #1b1b1b;
+	--titlesFont: 'Yanone Kaffeesatz', Arial, sans-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font: 16px / 1.42 "Roboto", Arial, sans-serif;
+	color: #212121;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: #fcf5e6;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-width: 1440px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul > li {
+	list-style: none;
+}
+
+.header {
+	position: relative;
+	max-height: 180px;
+	background: url('img/bg/hero.jpg') center center / cover no-repeat;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-guys {
+	background: url('img/decor/header-guys.png') center center / 100% no-repeat;
+	width: 25%;
+	top: 0;
+	left: 50%;
+}
+
+.lined-text {
+	font-family: "Alegreya Sans", Arial, sans-serif;
+	color: #fff;
+	font-size: 31px;
+	text-transform: uppercase;
+	font-weight: 900;
+	line-height: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.lined-text__word {
+	background: #000;
+	padding: 0 17px 8px;
+	margin-top: -7px;
+}
