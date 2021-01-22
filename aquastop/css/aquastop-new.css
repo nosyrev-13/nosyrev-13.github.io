@@ -171,3 +171,18 @@ h6, .h6
    color: #2E74B5;
    background-color: transparent;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1439px)
+{
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+}
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+}
+@media only screen and (min-width: 576px) and (max-width: 767px)
+{
+}
+@media only screen and (max-width: 575px)
+{
+}
